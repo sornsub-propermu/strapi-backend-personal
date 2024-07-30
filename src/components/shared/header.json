@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_headers",
+  "info": {
+    "displayName": "Header",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "muted"
+      ],
+      "default": "primary"
+    },
+    "label": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    }
+  }
+}
