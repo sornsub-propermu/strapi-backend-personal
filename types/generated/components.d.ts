@@ -70,11 +70,6 @@ export interface SharedHeader extends Schema.Component {
       Attribute.DefaultTo<'primary'>;
     label: Attribute.String;
     title: Attribute.String & Attribute.Required;
-    articles: Attribute.Relation<
-      'shared.header',
-      'oneToMany',
-      'api::article.article'
-    >;
   };
 }
 
@@ -88,7 +83,7 @@ export interface SharedButton extends Schema.Component {
     theme: Attribute.Enumeration<['primary', 'secondary', 'muted']> &
       Attribute.Required &
       Attribute.DefaultTo<'primary'>;
-    link: Attribute.Component<'blocks.link', true>;
+    link: Attribute.Component<'blocks.link'>;
   };
 }
 

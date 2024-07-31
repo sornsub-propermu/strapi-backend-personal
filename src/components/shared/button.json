@@ -8,17 +8,12 @@
   "attributes": {
     "theme": {
       "type": "enumeration",
-      "enum": [
-        "primary",
-        "secondary",
-        "muted"
-      ],
+      "enum": ["primary", "secondary", "muted"],
       "default": "primary",
       "required": true
     },
     "link": {
       "type": "component",
-      "repeatable": true,
       "component": "blocks.link"
     }
   }

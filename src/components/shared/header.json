@@ -21,11 +21,6 @@
     "title": {
       "type": "string",
       "required": true
-    },
-    "articles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::article.article"
     }
   }
 }
